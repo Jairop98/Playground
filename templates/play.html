@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+    <style>
+        .bigbox{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .boxone{
+            height: 100px;
+            width: 100px;
+            border: 2px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        {% for x in range(0,num) %}
+        <div class= "boxone" style="background-color:{{color}};">
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
